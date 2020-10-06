@@ -1,0 +1,202 @@
+/* header */
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+header {
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  background-image: url(images/backgrounds/dark-background.jpg);
+}
+
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
+}
+
+/* links styled */
+a:link    { color: red; }
+a:visited { color: orange; }
+a:hover   { color: pink; }
+a:active  { color: green; }
+
+/* Navigation Items / Header */
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logotitle {
+  text-align: center;
+  font-size: 22px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 22px;
+  padding-bottom: 0;
+}
+
+.ol-list {
+    text-align: center;
+    list-style-position: inside;
+    margin-left: 0px;
+    list-style-type: none;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  padding: 0 20px 0 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: none;
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 15px 0 0 0;
+  font-size: 64px;
+  margin: 10px;
+  color: white;
+}
+
+/* Groups / Items - Mobile 1st */
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+.item-triple {
+  flex: 3;
+}
+
+/* Groups & Items  (Desktop) */
+
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
+
+
+/* general items */
+
+p {
+ font-family: helvetica, arial, san-serif;
+ line-height: 1.5em;
+ margin-bottom: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* General Items */
+
+main {
+  padding: 20px 0;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+main a {
+  font-weight: 700;
+  text-decoration: none;  
+}
+
+.langlist {
+  text-align: center;  
+}
+
+main img {
+  width: 100%;
+}
+
+section.dark-background {   
+  background-color: rgba(24, 23, 23, 0.918);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 80px 0;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-image: url(images/backgrounds/dark-background.jpg);
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+/* image items  */
+img.image-item {
+  border-radius: 8px;
+}
+
+/* contact form properties */
+form {
+  padding-right: 10px;
+}
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+.contact-list-items {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+  margin: 0;
+}
